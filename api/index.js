@@ -47,9 +47,6 @@ app.post("/api", (req, res) => {
       });
   });
 
-// app.post("/api", (req, res) => {
-
-// });
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
