@@ -27,7 +27,7 @@ app.get("/api", (req, res) => {
   request(req.query.message)
     .then((result) => {
         // console.log('result', result.result.data.results)
-      res.json(result);
+      res.json({env: process.env.OPENAI_API_KEY, result: result});
     })
     .then((data) => {
       output = data;
